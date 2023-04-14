@@ -9,7 +9,7 @@ const postRoute = require("./route/posts/postRoute");
 const commentRoutes = require("./route/comments/commentRoute");
 const emailMsgRoute = require("./route/emailMsg/emailMsgRoute");
 const categoryRoute = require("./route/category/categoryRoute");
-
+require("dotenv").config({ path: "ENV_FILENAME" });
 const app = express();
 //DB
 dbConnect();
